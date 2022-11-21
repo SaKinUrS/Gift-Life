@@ -973,12 +973,13 @@ body{
     max-width: 246px;
     aspect-ratio: 0.84/1;
     margin-bottom: 20px;
+	 overflow: hidden;
+	 border-radius: 10px;
 
     img{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 10px;
         transition: .2s linear;
 
         @media(any-hover: hover){
@@ -1193,6 +1194,8 @@ body{
     border-radius: 100%;
     position: relative;
     cursor: pointer;
+	 transition: all .2s linear;
+
     a{
         display: flex;
         align-items: center;
@@ -1201,13 +1204,13 @@ body{
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-
          
+
     }
     @media(any-hover: hover){
         &:hover{
             background-color: #296936;
-
+				
         }
     }
 }
